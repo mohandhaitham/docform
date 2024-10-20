@@ -1,0 +1,54 @@
+/* FONTS */
+@import url(../css/clash-display.css);
+
+/* VARIABLES */
+:root {
+    --c-dark: #071f37;
+    --c-brand: #4e57d4;
+    --c-brand-light: #6970dd;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --font-base: "ClashDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+}
+
+/* RESET & HELPERS */
+body {
+font-size:2.25rem;
+font-weight: bold;
+}
+
+h1, h2, h3,h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--c-brand-light);
+}
+
+@media (max-width: 576px) {
+    .form-control {
+        height: auto; /* Adjust input height for mobile */
+    }
+}
+
+.editor {
+    height: 100px; /* Set the height of the editor */
+    border: 1px solid #ced4da; /* Add a border to the editor */
+    border-radius: .375rem; /* Add border radius */
+}
+
+.editor2 {
+    height: 100px; /* Set the height of the editor */
+    border: 1px solid #ced4da; /* Add a border to the editor */
+    border-radius: .375rem; /* Add border radius */
+}
